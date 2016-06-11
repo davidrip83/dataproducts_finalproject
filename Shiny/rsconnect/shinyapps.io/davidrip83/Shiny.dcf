@@ -1,6 +1,7 @@
 name: Shiny
 account: davidrip83
 server: shinyapps.io
-bundleId: 472317
+appId: 106789
+bundleId: 478277
 url: https://davidrip83.shinyapps.io/Shiny/
-when: 1465147497.02292
+when: 1465684278.27539

@@ -34,7 +34,7 @@
   <hgroup class="auto-fadein">
     <h1>Pythagorean theorem app</h1>
     <h2>Final project for data products class</h2>
-    <p>David Riphagen<br/>2016-06-05</p>
+    <p>David Riphagen<br/>2016-06-11</p>
   </hgroup>
   <article></article>  
 </slide>
@@ -85,25 +85,20 @@
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Assumptions</h2>
+    <h2>Assumptions and output</h2>
   </hgroup>
   <article data-timings="">
-    <ul>
+    <p>Assumptions</p>
+
+<ul>
 <li>Object should be a right triangle</li>
 <li>Length of side x is a positive integer</li>
 <li>Length of side y is a positive integer</li>
 </ul>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<p>Key output</p>
 
-<slide class="" id="slide-4" style="background:;">
-  <hgroup>
-    <h2>Key output</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>The key output of the Shiny application is the length z of the third side of the right triangle. 
+<p>The key output of the Shiny application is the length z of the third side of the right triangle. 
 The Shiny app uses the Pythagorean theorem:
 <code>x^2 + y^2 = z^2</code></p>
 
@@ -114,7 +109,7 @@ The Shiny app uses the Pythagorean theorem:
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-5" style="background:;">
+<slide class="" id="slide-4" style="background:;">
   <hgroup>
     <h2>Example</h2>
   </hgroup>
@@ -128,8 +123,18 @@ The Shiny app uses the Pythagorean theorem:
 <li>Side x has length 3</li>
 <li>Side y has length 4</li>
 </ul></li>
-<li>After pressing &#39;Submit&#39;, the length of side z is calculated as 5</li>
+<li>After pressing &#39;Submit&#39;, the length of side z is calculated as 5.
+This is illustrated in the r code below:</li>
 </ul>
+
+<pre><code class="r">length_x &lt;- 3
+length_y &lt;- 4
+length_z &lt;- sqrt(length_x^2 + length_y^2)
+print(length_z)
+</code></pre>
+
+<pre><code>## [1] 5
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
@@ -153,20 +158,14 @@ The Shiny app uses the Pythagorean theorem:
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Assumptions'>
+        data-slide=3 title='Assumptions and output'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Key output'>
+        data-slide=4 title='Example'>
          4
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Example'>
-         5
       </a>
     </li>
   </ul>

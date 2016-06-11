@@ -2,7 +2,7 @@
 title       : Pythagorean theorem app
 subtitle    : Final project for data products class
 author      : David Riphagen
-job         : 2016-06-05
+job         : 2016-06-11
 framework   : io2012
 highlighter : prettify 
 hitheme     : tomorrow      
@@ -39,15 +39,15 @@ Note that both x and y should be positive to represent a real right triangle. Ho
 
 ---
 
-## Assumptions
+## Assumptions and output
+
+Assumptions
 
 - Object should be a right triangle
 - Length of side x is a positive integer
 - Length of side y is a positive integer
 
----
-
-## Key output
+Key output
 
 The key output of the Shiny application is the length z of the third side of the right triangle. 
 The Shiny app uses the Pythagorean theorem:
@@ -65,4 +65,17 @@ The following example details how the apps works:
 - The right triangle has two sides:
     - Side x has length 3
     - Side y has length 4
-- After pressing 'Submit', the length of side z is calculated as 5
+- After pressing 'Submit', the length of side z is calculated as 5.
+This is illustrated in the r code below:
+
+```r
+length_x <- 3
+length_y <- 4
+length_z <- sqrt(length_x^2 + length_y^2)
+print(length_z)
+```
+
+```
+## [1] 5
+```
+
