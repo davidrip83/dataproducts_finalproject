@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pythagorean theorem app</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Pythagorean theorem app">
+  <meta name="author" content="David Riphagen">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/prettify/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Pythagorean theorem app</h1>
+    <h2>Final project for data products class</h2>
+    <p>David Riphagen<br/>2016-06-05</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Project overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This slide deck provides a pitch for my Shiny application for the final project for <a href="https://www.coursera.org/learn/data-products/">data products class</a> from Coursera / Johns Hopkins.</p>
+
+<p>The goal of my shiny application is to calculate the side z of a right triangle with sides x and y. For this calculation the app uses the Pythagorean theorem.</p>
+
+<p>Subgoals are:</p>
+
+<ul>
+<li>Allowing users to change the input data for x and y</li>
+<li>Displaying the data users have inputted</li>
+<li>Using the Pythagorean theorem to calculate the length of side z</li>
+<li>Displaying the length of side z</li>
+</ul>
+
+<p>You can find the application <a href="https://davidrip83.shinyapps.io/Shiny/">here</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>All inputs provided on the left hand side</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The inputs for my shiny appllication need to be provided by users in the two boxes on the left hand side. The inputs are:</p>
+
+<ul>
+<li>Length of side x: integer with the value of the length of side x of the right triangle</li>
+<li>Length of side y: integer with the value of the length of side y of the right triangle</li>
+</ul>
+
+<p>Note that both x and y should be positive to represent a real right triangle. However, because the Pythagorean theorem squares the inputs, technically the values of x and y can be negative.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Assumptions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Object should be a right triangle</li>
+<li>Length of side x is a positive integer</li>
+<li>Length of side y is a positive integer</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Key output</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The key output of the Shiny application is the length z of the third side of the right triangle. 
+The Shiny app uses the Pythagorean theorem:
+<code>x^2 + y^2 = z^2</code></p>
+
+<p>Specifically, the app implements the following algorithm:
+<code>z = sqrt(x^2 + y^2)</code></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The following example details how the apps works:</p>
+
+<ul>
+<li>The right triangle has two sides:
+
+<ul>
+<li>Side x has length 3</li>
+<li>Side y has length 4</li>
+</ul></li>
+<li>After pressing &#39;Submit&#39;, the length of side z is calculated as 5</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Project overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='All inputs provided on the left hand side'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Assumptions'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Key output'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Example'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- Google Prettify -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+  <script src='libraries/highlighters/prettify/js/lang-r.js'></script>
+  <script>
+    var pres = document.getElementsByTagName("pre");
+    for (var i=0; i < pres.length; ++i) {
+      pres[i].className = "prettyprint linenums";
+    }
+    prettyPrint();
+  </script>
+  <!-- End Google Prettify --> 
+  </html>
